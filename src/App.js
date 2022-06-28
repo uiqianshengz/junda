@@ -11,7 +11,7 @@ import About from './pages/About';
 import Business from './pages/Business';
 import Contact from './pages/Contact';
 import News from './pages/News';
-import Operation from './pages/Operation';
+import Project from './pages/Project';
 import Staff from './pages/Staff';
 
 class App extends Component {
@@ -26,13 +26,12 @@ class App extends Component {
                         <Route path='/contact' element={<Contact></Contact>}>contact页面</Route>
                         <Route path='/business' element={<Business></Business>}>Business页面</Route>
                         <Route path='/news' element={<News></News>}>news页面</Route>
-                        <Route path='/operation' element={<Operation></Operation>}>operation页面</Route>
+                        <Route path='/project' element={<Project></Project>}>project页面</Route>
                         <Route path='/staff' element={<Staff></Staff>}>staff页面</Route>
                     </Routes>
                 </BrowserRouter>
                 <Footer></Footer>
             </Fragment>
-
         )
     }
 }

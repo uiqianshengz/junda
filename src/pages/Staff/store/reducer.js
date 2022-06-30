@@ -1,8 +1,8 @@
 import { fromJS } from "immutable";
-import * as actionTypes from './actionTypes';
+// import * as actionTypes from './actionTypes';
 const defaultState=fromJS({
-    TopList:[]
 })
-export default (state=defaultState,action)=>{
+const staffe= (state=defaultState,action)=>{
     return state
 }
+export default staffe

@@ -1,21 +1,22 @@
 import React, { Component } from "react";
-import { FooterCon, FooterLeft, FooterRight } from './style'
+import { FooterCon, FooterLeft, FooterRight,Footerwr } from './style'
 class Footer extends Component {
     render() {
         return (
             <FooterCon>
-                <FooterLeft>
-                    <p>服务热线<span className="fuwu">400-0755-167</span></p>
-                    <p>深圳市君达房地产经纪有限公司版权所有</p>
-                    <p>Copyright2018 粤ICP备15008189号-1</p>
-                    <p>技术支持</p>
-                    <img src="http://szjddc.com/dist/images/code.png" alt="" />
-                    <div className="guanzhu">
-                        <p>关注我们 Concern Us</p>
-                        <p>添加君达微信公众号了解更多企业资讯</p>
-                    </div>
-                </FooterLeft>
-                <FooterRight>
+                <Footerwr>
+                    <FooterLeft>
+                        <p>服务热线<span className="fuwu">400-0755-167</span></p>
+                        <p>深圳市君达房地产经纪有限公司版权所有</p>
+                        <p>Copyright2018 粤ICP备15008189号-1</p>
+                        <p>技术支持</p>
+                        <img src="http://szjddc.com/dist/images/code.png" alt="" />
+                        <div className="guanzhu">
+                            <p>关注我们 Concern Us</p>
+                            <p>添加君达微信公众号了解更多企业资讯</p>
+                        </div>
+                    </FooterLeft>
+                    <FooterRight>
                         <dl>
                             <dt>关于君达</dt>
                             <dd>公司简介</dd>
@@ -46,7 +47,8 @@ class Footer extends Component {
                             <dd>人才理念</dd>
                             <dd>招聘信息</dd>
                         </dl>
-                </FooterRight>
+                    </FooterRight>
+                </Footerwr>
             </FooterCon>
         )
     }

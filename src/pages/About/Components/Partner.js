@@ -18,9 +18,9 @@ class Partner extends Component {
                             this.props.partnerList.map((item, index) => {
                                 return (
                                     <Col key={index} className="gutter-row col" span={4}>
-                                        <a href="javascript:;">
+                                        <div>
                                             <img src={item.get('imgUrl')} alt="" />
-                                        </a>
+                                        </div>
                                         
                                     </Col>
                                 )

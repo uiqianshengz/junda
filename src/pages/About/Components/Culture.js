@@ -33,7 +33,7 @@ class Culture extends Component {
                                 this.props.CultureList.map((item, index) => {
                                     return (
                                         <li key={index}>
-                                            <div className="culture-list">
+                                            <div className="cultureList">
                                                 <div className="incon">
                                                     <img className='beforeimg' src={item.get('imgUrl1')} alt="" />
                                                     <img className='afterimg' src={item.get('imgUrl2')} alt="" />

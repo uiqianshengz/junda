@@ -126,26 +126,21 @@ export const CultureWrapper = styled.div`
                 float: left;
                 font-size: 13px;
                 padding: 0 2px 4px;
-                animation-duration: 1.2s;
+                /* animation-duration: 0.7s; */
                 width: 25%;
-                .culture-list{
+                .cultureList{
                     height: 154px;
                     background: #fff;
                     padding: 20px 28px 30px;
-                    transition: all ease 0.7s;
                     color: #666666;
                     .incon{
                         margin-bottom: 15px;
                         position: relative;
                         img{
                             height: 38px;
-                            transition: all ease 0.7s;
                         }
                         .afterimg{
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            opacity: 0;
+                            /* display: none; */
                         }
                     }
                     h4{
@@ -154,7 +149,25 @@ export const CultureWrapper = styled.div`
                         margin-bottom: 5px;
                         transition: all ease 0.7s;
                     }
+                    p{
+                        transition: all ease 0.7s;
+                    }
                 }
+            }
+            li:hover{
+                div{
+                    background-color: #E11B1A;
+                }
+                .beforeimg{
+                    display:none;
+                }
+                afterimg{
+                    /* display:block; */
+                }
+                h4,p{
+                    color:white;
+                }
+
             }
         }
     }
@@ -175,7 +188,7 @@ export const PartnerWrapper = styled.div`
         .col{
             padding: 0 9px 0;
             width: 16.66666667%;
-            a{
+            div{
                 display: block;
                 border: 1px solid #E5E5E5;
                 overflow: hidden;
@@ -185,7 +198,7 @@ export const PartnerWrapper = styled.div`
                     transition: all .3s;
                 }
             }
-            a:hover{
+            div:hover{
                 border: 1px solid red;
                 img{
                     transform:scale(1.05);
@@ -202,11 +215,12 @@ export const DevelopmentContent = styled.div`
     min-height: 484px;
     background-size: cover;
     position: relative;
+    overflow: hidden    ;
     .china{
         position: absolute;
         left: 33%;
         width: 64%;
-        transform:translateY(-280px);   
+        transform:translateY(-260px);   
         z-index: 1;
         img{
             top: 40%;
@@ -225,6 +239,7 @@ export const DevelopmentWrapper = styled.div`
         width: 100%;
         z-index: 10;
         text-align: center;
+        /* overflow: hidden; */
         li{
             padding-right: 38px;
             width: auto;
@@ -246,6 +261,8 @@ export const DevelopmentWrapper = styled.div`
             }
         }
         .redLi{
+            position: absolute;
+            left: 532px;
             z-index: 100;
             color: red;
         }
@@ -254,7 +271,7 @@ export const DevelopmentWrapper = styled.div`
             /* width: 40%; */
             z-index: 0;
             transform:translateY(-120px);
-            transform:translateX(150px);
+            transform:translateX(332px);
             display: flex;
             justify-content: space-between;
             div{

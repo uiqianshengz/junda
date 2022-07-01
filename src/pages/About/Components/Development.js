@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {DevelopmentContent,DevelopmentWrapper} from '../style'
+import { DevelopmentContent, DevelopmentWrapper } from '../style'
 class Development extends Component {
     render() {
         return (
             <div>
                 <DevelopmentContent>
                     <DevelopmentWrapper>
-                        <ul>
+                        <div className="contentContainer">
+                            <ul>
                             <li>
                                 <div>
                                     <span>3</span>+
@@ -40,12 +41,14 @@ class Development extends Component {
                                 <p>面向全国发展。</p>
                                 <p className='nattitle'>National Development</p>
                             </div>
-                                
+
                         </div>
+                        </div>
+                        <div className="china">
+                        <img src="http://szjddc.com/dist/images/wicon31.png" alt="" />
+                    </div>
                     </DevelopmentWrapper>
-                            <div className="china">
-                                <img src="http://szjddc.com/dist/images/wicon31.png" alt="" />
-                            </div>
+                    
                 </DevelopmentContent>
             </div>
         );

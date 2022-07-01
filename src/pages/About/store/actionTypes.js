@@ -1,0 +1,1 @@
+export const INIT_ABOUT_LIST='init_about_list'

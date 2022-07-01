@@ -1,8 +1,18 @@
-import { fromJS } from "immutable";
-import * as actionTypes from './actionTypes';
-const defaultState=fromJS({
-    TopList:[]
+import { fromJS } from 'immutable'
+import * as actionTypes from './actionTypes'
+const defaultState = fromJS({
+    Newsbox:[],
+    ShineData:[]
 })
-export default (state=defaultState,action)=>{
-    return state
+const newsa = (state = defaultState, action) => {
+    switch (action.type) {
+        case actionTypes.NEWS_LIST:
+            return state.merge({
+                Newsbox: fromJS(action.data.Newsbox),
+                ShineData: fromJS(action.data.ShineData)
+            })
+        default:
+    }
+    return state;
 }
+export default newsa

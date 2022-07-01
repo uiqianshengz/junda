@@ -1,13 +1,11 @@
 import styled from "styled-components"
 export const FooterCon = styled.div`
+margin-top: 50px;
 height: 300px;
 width: 100%;
 background-color: #363636;
-position: absolute;
 color: #666;
 font-size: 16px;
-padding: 40px;
-bottom: 0px;
 .guanzhu{
     margin-left: 60px;
     margin-top: -60px;
@@ -25,12 +23,18 @@ img{
     margin-top: 20px;
 }
 `
-export const FooterLeft = styled.div``
+export const Footerwr = styled.div`
+width: 1200px;
+margin: 0 auto;
+padding: 10px;
+`
+export const FooterLeft = styled.div`
+margin-top: 50px;
+`
 export const FooterRight = styled.div`
 display: flex;
-position: absolute;
-right: 50px;
-top: 60px;
+margin-left: 590px;
+margin-top: -160px;
 dl{
     margin-left: 50px;
     overflow: hidden;

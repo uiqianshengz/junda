@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const ConWrapper = styled.div`
+margin-bottom: 50px;
 `
 export const ConCarou = styled.div`
 img{

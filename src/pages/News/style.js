@@ -88,6 +88,7 @@ export const PressRight = styled.div`
     }
 `;
 export const PressNex = styled.div`
+margin-bottom: 50px;
     width: 1200px;
     height: 160px;
     margin-top: 50px; 
@@ -174,6 +175,7 @@ div:hover{
 }
 `
 export const Shinesmail = styled.div`
+margin-bottom: 50px;
 display: flex;
 flex-wrap: wrap;
 `

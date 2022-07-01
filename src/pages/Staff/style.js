@@ -56,6 +56,7 @@ margin-top: 10px;
 }
  `
 export const StaffCpp = styled.div`
+margin-bottom: 50px;
 width: 1200px;
 height: 332px;
 border: 1px solid #efefef;
@@ -88,6 +89,7 @@ div{
 }
 `
 export const StaffMess = styled.div`
+margin-bottom: 50px;
 width: 1200px;
 margin: 0 auto;
     .tall{

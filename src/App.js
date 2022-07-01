@@ -18,8 +18,8 @@ class App extends Component {
     render() {
         return (
             <Fragment>
-                <Header></Header>
                 <BrowserRouter>
+                <Header></Header>
                     <Routes>
                         <Route path='/' element={<Home></Home>}>home页面</Route>
                         <Route path='/about' element={<About></About>}>about页面</Route>
@@ -29,8 +29,8 @@ class App extends Component {
                         <Route path='/project' element={<Project></Project>}>project页面</Route>
                         <Route path='/staff' element={<Staff></Staff>}>staff页面</Route>
                     </Routes>
+                    <Footer></Footer>
                 </BrowserRouter>
-                <Footer></Footer>
             </Fragment>
         )
     }

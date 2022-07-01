@@ -47,6 +47,7 @@ class Footer extends Component {
                             <dd>招聘信息</dd>
                         </dl>
                 </FooterRight>
+
             </FooterCon>
         )
     }

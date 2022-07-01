@@ -56,6 +56,7 @@ export const BusinessRight = styled.div`
     }
 `;
 export const EstateCon = styled.div`
+margin-bottom: 80px;
    img{
        width: 100%;
        margin-top: -60px;
@@ -243,6 +244,7 @@ export const SellText = styled.div`
  line-height: 30px;
 `;
 export const MediaCon = styled.div`
+margin-bottom: 80px;
 `;
 export const MediaWrapper = styled.div`
   width: 1200px;

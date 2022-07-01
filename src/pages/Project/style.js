@@ -72,7 +72,6 @@ export const ProjectRight=styled.div`
 `;
 // ProjectCon,BusinessWrapper,ProjectTit1,ProjectTit2
 export const BusinessCon =styled.div`
-
 `;
 export const BusinessWrapper =styled.div`
 width: 1200px;

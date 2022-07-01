@@ -1,0 +1,1 @@
+export const ESTATE_LIST='estate_list'

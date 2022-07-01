@@ -13,26 +13,42 @@ import Contact from './pages/Contact';
 import News from './pages/News';
 import Project from './pages/Project';
 import Staff from './pages/Staff';
-
+// import Estate from './pages/Business/components/EstateList';
+import Media from './pages/Business/components/Media';
+import Invest from './pages/Business/components/Invest';
+import EstateList from './pages/Business/components/EstateList';
+import BusinessList from './pages/Project/component/BusinessList';
+import House from './pages/Project/component/House';
+import Property from './pages/Project/component/Property'
 class App extends Component {
     render() {
         return (
-            <Fragment>
-                <Header></Header>
+            <Fragment> 
                 <BrowserRouter>
+                <Header></Header>
                     <Routes>
                         <Route path='/' element={<Home></Home>}>home页面</Route>
                         <Route path='/about' element={<About></About>}>about页面</Route>
                         <Route path='/contact' element={<Contact></Contact>}>contact页面</Route>
-                        <Route path='/business' element={<Business></Business>}>Business页面</Route>
+                        <Route path='/business' element={<Business></Business>}>Business页面
+                         <Route path='' element={<EstateList></EstateList>}>Estate页面</Route>
+                         <Route path='estate' element={<EstateList></EstateList>}>Estate页面</Route>
+                         <Route path='media' element={<Media></Media>}>media页面</Route>
+                         <Route path='invest' element={<Invest></Invest>}>invest页面</Route>
+                        </Route>
                         <Route path='/news' element={<News></News>}>news页面</Route>
-                        <Route path='/project' element={<Project></Project>}>project页面</Route>
+                        <Route path='/project' element={<Project></Project>}>project页面
+                        <Route path='' element={<BusinessList></BusinessList>}>Business页面</Route>
+                         <Route path='busines' element={<BusinessList></BusinessList>}>Business页面</Route>
+                         <Route path='house' element={<House></House>}>House页面</Route>
+                         <Route path='Property' element={<Property></Property>}>Property页面</Route>
+                        </Route>
                         <Route path='/staff' element={<Staff></Staff>}>staff页面</Route>
                     </Routes>
                 </BrowserRouter>
                 <Footer></Footer>
             </Fragment>
-        )
+        ) 
     }
 }
 

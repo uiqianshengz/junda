@@ -46,6 +46,7 @@
                 "id":1,
                 "imgUrl":"http://szjddc.com/dist/images/wimg01.jpg",
                 "title":"君达地产",
+                "http":"/business/estate",
                 "eTitle":"Real Estate Development",
                 "txt":"君达地产致力于服务房地产领域商业地产、住宅地产两大核心地产形态业务。为开发商提供前期策划代理、营销策划顾问、销售代理、招商代理、运营管理顾问等专业代理服务。"
             },
@@ -53,6 +54,7 @@
                 "id":2,
                 "imgUrl":"http://szjddc.com/dist/images/wimg02.jpg",
                 "title":"君达传媒",
+                "http":"/business/media",
                 "eTitle":"Mediac",
                 "txt":"君达传媒专注于房地产领域的地产策划整合推广，以多年的房地产营销实战经验为背景，恪守创意性整合推广以完成营销目标为前提的理念，为开发商提供超高附加值的广告营销策划服务。"
             },
@@ -60,6 +62,7 @@
                 "id":3,
                 "imgUrl":"http://szjddc.com/dist/images/wimg03.jpg",
                 "title":"君达投资",
+                "http":"/business/invest",
                 "eTitle":"Investment",
                 "txt":"经过多年的行业积累，源于对房地产市场的敏锐触觉和专业的评估及操盘经验，成功进军物业整合收购投资领域。行业的积累，财团的青睐支持，君达以工匠的精神，超前的理念投资打造房地产领域[Atcpcfd]平台的研发。"
             }

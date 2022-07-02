@@ -365,6 +365,7 @@ export const ProjectContent = styled.div`
             position: absolute;
         }
         .moreTxt{
+            color: #000;
             position: absolute;
             left: 30%;
             z-index: 99;

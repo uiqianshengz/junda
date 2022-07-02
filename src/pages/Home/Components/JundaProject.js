@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { ProjectContent } from '../style'
@@ -38,10 +39,12 @@ class JundaProject extends Component {
                         }
                     </Swiper>
                     <div className='projectMore'>
+                        <Link to='/project'>
                         <div className="MoreButton">
                             <div className="moreColor"></div>
                             <div className='moreTxt'>更多新闻</div>
                         </div>
+                        </Link>
 
                     </div>
             </ProjectContent>

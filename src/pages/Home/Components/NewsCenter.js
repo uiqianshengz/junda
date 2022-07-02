@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Col, Row } from 'antd';
 import { NewsContent, NewsWrapper } from '../style'
+import { Link } from 'react-router-dom';
 class NewsCenter extends Component {
     render() {
         return (
@@ -31,11 +32,12 @@ class NewsCenter extends Component {
                         }
                     </Row>
                     <div className='newsMore'>
+                    <Link to='/news'>
                         <div className="newsMoreButton">
                             <div className="moreColor"></div>
                             <div className='moreTxt'>更多新闻</div>
                         </div>
-                    
+                    </Link>
                     </div>
                 </NewsWrapper>
             </NewsContent>

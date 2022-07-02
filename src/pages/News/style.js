@@ -155,10 +155,6 @@ img{
     height: 160px;
     transition: 1s;
 }
-img:hover{
-transform: scale(1.05);
-transition: 1s;
-}
 div{
     width: 285px;
     height: 60px;
@@ -168,14 +164,21 @@ div{
     font-size: 13px;
     overflow: hidden;
     margin-top: -5px;
-}
-div:hover{
-    background-color: red;
-    color: white;
+    transition: all 1s;
 }
 `
 export const Shinesmail = styled.div`
 margin-bottom: 50px;
 display: flex;
 flex-wrap: wrap;
+.ShineJun:hover{
+    img{
+        transform: scale(1.05);
+        transition: 1s;
+    }
+    div{
+        background-color: red;
+        color: white;
+    }
+}
 `

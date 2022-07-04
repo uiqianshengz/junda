@@ -10,8 +10,6 @@ import BusinessReducer from '../pages/Business/store/reducer';
 import NewsReducer from '../pages/News/store/reducer';
 //导入project子仓库到总仓库
 import ProjectReducer from '../pages/Project/store/reducer';
-//导入staff子仓库到总仓库
-import StaffReducer from '../pages/Staff/store/reducer';
 //整合子仓库到总仓库进行管理
 export default combineReducers({
     home:HomeReducer,
@@ -19,5 +17,4 @@ export default combineReducers({
     business:BusinessReducer,
     news:NewsReducer,
     project:ProjectReducer,
-    staff:StaffReducer
 })

@@ -12,7 +12,7 @@ export const getButtonHide = () => ({
 })
 export const getHomeList = () => {
     return async (dispatch) => {
-        let { data: res } = await axios.get('/api/homeList.json')
+        let { data: res } = await axios.get('http://localhost:3004/homeList')
         if (res.status !== 200) return
         //使用InitAboutList将ajax结果发给reducer
         dispatch(initHomeList(res.data))

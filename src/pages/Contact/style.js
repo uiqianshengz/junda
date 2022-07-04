@@ -8,6 +8,12 @@ img{
 }
 `
 export const ContactW = styled.div`
+.line{
+    margin-top: 20px;
+    width: 20px;
+    border: 1px solid red;
+}
+
 width: 1200px;
 margin: 0 auto;
 .talll{

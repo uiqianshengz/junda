@@ -6,7 +6,7 @@ const estateList=(data)=>({
 })
 export const getEstateList=()=>{
     return async(dispatch)=>{
-       let{data:res}=await axios.get('/api/estateList.json')
+       let{data:res}=await axios.get('http://localhost:3004/estateList')
     //    console.log(res.data.before);
        if(res.status!==200)return
        dispatch(estateList(res.data))

@@ -26,8 +26,17 @@ export const Staffwr = styled.div`
     .linknames:hover{
     border-bottom: 2px solid red;
      }
+     .active{
+         color: red;
+         border-bottom: 2px solid red;
+     }
     `
 export const StaffWpp = styled.div`
+.line{
+    margin-top: 20px;
+    width: 20px;
+    border: 1px solid red;
+}
 width: 1200px;
 margin: 0 auto;
     .tal{
@@ -92,6 +101,11 @@ export const StaffMess = styled.div`
 margin-bottom: 50px;
 width: 1200px;
 margin: 0 auto;
+.line{
+    margin-top: 20px;
+    width: 20px;
+    border: 1px solid red;
+}
     .tall{
 color: #e41e1e;
 font-size: 25px;
@@ -103,7 +117,7 @@ font-weight: bold;
 margin-top: 10px;
 }
 .table{
-    margin-top: 50px;
+    margin-top: 20px;
     th{
         background-color: red;
         color: white;

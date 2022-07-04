@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { NewsWrapper, NewsCarou, NewsLin, Newswr } from './style'
-import { Link, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 class News extends Component {
     render() {
         return (
@@ -10,8 +10,8 @@ class News extends Component {
                 </NewsCarou>
                 <NewsLin>
                     <Newswr>
-                        <Link to="./press" className="linkname">君达新闻</Link>
-                        <Link to="./shine" className="linkname">君达风采</Link>
+                        <NavLink to="./press" className="linkname">君达新闻</NavLink>
+                        <NavLink to="./shine" className="linkname">君达风采</NavLink>
                     </Newswr>                 
                 </NewsLin>
                 <Outlet></Outlet>

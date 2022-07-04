@@ -6,7 +6,7 @@ const initAboutList=(data)=>({
 })
 export const getAboutList = () => {
     return async (dispatch) => {
-        let { data: res } = await axios.get('/api/aboutList.json') 
+        let { data: res } = await axios.get('http://localhost:3004/aboutList') 
         console.log(res);
         if (res.status !== 200) return
         //使用InitAboutList将ajax结果发给reducer

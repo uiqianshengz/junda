@@ -7,6 +7,7 @@ class Message extends Component {
             <StaffMess>
                 <p className="tall">Job Offers</p>
                 <h4>招聘信息</h4>
+                <p className="line"></p>
                 <Table className="table" columns={columns} dataSource={data}/>
             </StaffMess>
         )

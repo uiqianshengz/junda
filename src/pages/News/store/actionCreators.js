@@ -6,7 +6,7 @@ const NewsDataLi=(data)=>({
 })
 export const NewsDataPress=()=>{
     return async (dispatch)=>{
-        let {data:res}=await axios.get('/api/newsList.json')
+        let {data:res}=await axios.get('http://localhost:3004/newsList')
         console.log(res);
         if(res.status!==200)return;
         dispatch(NewsDataLi(res.data))

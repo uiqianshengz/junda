@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import { NavLink } from 'react-router-dom';
 import { actionCreators } from '../store';
 import {
     BusinessCon, BusinessWrapper, BusinessTit1, BusinessTit2, BusinessBlock, BusinessText, BusinessImg, BusTitle,
@@ -19,7 +20,8 @@ class Business extends Component {
                         {
                             this.props.Commercont.map((item, index) => {
                                 return (
-                                    <BusinessBlock key={index}>
+                                    <NavLink to={'busdetails?id='+item.get('id')}  key={index}>
+                                         <BusinessBlock>
                                         <BusinessImg>
                                             <img src={item.get('img')} alt="" />
                                         </BusinessImg>
@@ -29,6 +31,8 @@ class Business extends Component {
                                             <BusTips><span>{item.get('tips')}</span></BusTips>
                                         </BusinessText>
                                     </BusinessBlock>
+                                    </NavLink>
+                                   
                                 )
 
                             })

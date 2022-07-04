@@ -157,3 +157,10 @@ span:hover{
         color: red;
     }
 `;
+// DetailsWrapper,DetailsTit
+export const DetailsWrapper=styled.div`
+
+`;
+export const DetailsTit=styled.div`
+
+`;

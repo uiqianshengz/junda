@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Col, Row } from 'antd';
 import { BusinessCentent, BusinessWrapper } from '../style'
+import { Link } from 'react-router-dom';
 class JundaBusiness extends Component {
     render() {
         return (
@@ -14,14 +15,16 @@ class JundaBusiness extends Component {
                             this.props.businessList.map((item, index) => {
                                 return (
                                     <Col key={index} className="gutter-row businessCard" sm={{ span: 24 }} lg={{ span: 8 }}>
-                                        <div className="imgCard">
-                                            <img src={item.get('imgUrl')} alt="" />
-                                        </div>
-                                        <div className="businessTxt">
-                                            <h3>{item.get('title')}</h3>
-                                            <h4>{item.get('eTitle')}</h4>
-                                            <p>{item.get('txt')}</p>
-                                        </div>
+                                        <Link to={item.get('http')}>
+                                            <div className="imgCard">
+                                                <img src={item.get('imgUrl')} alt="" />
+                                            </div>
+                                            <div className="businessTxt">
+                                                <h3>{item.get('title')}</h3>
+                                                <h4>{item.get('eTitle')}</h4>
+                                                <p>{item.get('txt')}</p>
+                                            </div>
+                                        </Link>
                                     </Col>
                                 )
                             })

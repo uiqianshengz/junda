@@ -25,13 +25,14 @@ class Carousels extends Component {
                     </CarouselItem>
                 </Carousel>
                 {
-                    this.props.buttonShows?(<div>
-                        <LeftButton onClick={this.prevImg}  >
-                        <i className='icon1' />
-                    </LeftButton>
-                    <RightButton onClick={this.nextImg}>
-                        <i className='icon2' />
-                    </RightButton>
+                    this.props.buttonShows?(
+                    <div>
+                            <LeftButton onClick={this.prevImg}  >
+                            <i className='icon1' />
+                        </LeftButton>
+                        <RightButton onClick={this.nextImg}>
+                            <i className='icon2' />
+                            </RightButton>
                     </div>):null
                 }
             </div>

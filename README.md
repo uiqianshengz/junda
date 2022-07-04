@@ -1,3 +1,6 @@
+介绍
+本项目是仿君达地产官方网站制作的
+主要用来展示公司
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

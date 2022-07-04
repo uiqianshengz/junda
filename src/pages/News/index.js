@@ -18,6 +18,10 @@ class News extends Component {
             </NewsWrapper>
         )
     }
+    componentDidMount(){
+        // 返回顶部
+        window.scrollTo(0, 0);
+    }
 }
 
 export default News

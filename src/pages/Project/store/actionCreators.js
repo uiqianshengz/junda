@@ -1,7 +1,7 @@
 import axios from 'axios'
 import * as actionTypes from './actionTypes'
-const projectList=(data)=>({
-    type:actionTypes.PROJECT_LIST,
+const projectList = (data) => ({
+    type: actionTypes.PROJECT_LIST,
     data
 })
 const BusDetailsList=(data)=>({

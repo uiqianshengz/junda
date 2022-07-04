@@ -97,25 +97,24 @@ position: relative;
 z-index: 3;
 `;
 export const EstateText = styled.div`
-   margin-top: 10px;
-   font-size: 14px;
+    margin-top: 10px;
+    font-size: 14px;
     color: #666;
     font-family: Arial, 'Microsoft YaHei','Hiragino Sans GB', sans-serif;
 `;
 export const EstateClass = styled.div`
-display: flex;
-justify-content: space-between;
-div:hover{
- color: red;
-}
-
+    display: flex;
+    justify-content: space-between;
+    div:hover{
+        color: red;
+    }
 `;
 export const EstateTit = styled.div`
 font-size: 18px;
 padding-top: 25px;
 line-height: 20px;
 font-weight: normal;
-
+cursor: pointer;
 `;
 export const EstateLast = styled.div`
     height: 370px;

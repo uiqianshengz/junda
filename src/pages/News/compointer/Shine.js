@@ -12,8 +12,8 @@ class Shine extends Component {
                     {
                         this.props.ShineData.map((item, index) => {
                             return (
-                                <ShineJun key={index}>
-                                   <img src={item.get('imgUrl')} alt="" />
+                                <ShineJun className="ShineJun" key={index}>
+                                    <img src={item.get('imgUrl')} alt="" />
                                     <div>{item.get('title')}</div>
                                 </ShineJun>
                             )

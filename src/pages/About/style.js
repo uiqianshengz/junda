@@ -215,26 +215,18 @@ export const DevelopmentContent = styled.div`
     min-height: 484px;
     background-size: cover;
     position: relative;
-    overflow: hidden    ;
-    .china{
-        position: absolute;
-        left: 33%;
-        width: 64%;
-        transform:translateY(-260px);   
-        z-index: 1;
-        img{
-            top: 40%;
-            border: 0px;
-            max-width: 100%;
-        }
-    }
+    overflow: hidden;
+    
 `;
 export const DevelopmentWrapper = styled.div`
     margin: 0px auto;
     max-width: 1200px;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0;
-    ul{
+    position: relative;
+    .contentContainer{
+
+        ul{
         margin-top: 12%;
         width: 100%;
         z-index: 10;
@@ -247,6 +239,7 @@ export const DevelopmentWrapper = styled.div`
             float: left;
             padding-bottom: 20px;
             div{
+                font-size: 30px;
                 span{
                     font-size: 50px;
                     line-height: 50px;
@@ -262,7 +255,7 @@ export const DevelopmentWrapper = styled.div`
         }
         .redLi{
             position: absolute;
-            left: 532px;
+            left: 410px;
             z-index: 100;
             color: red;
         }
@@ -290,4 +283,16 @@ export const DevelopmentWrapper = styled.div`
             }
                 
         }
+    }
+    .china{
+    position: absolute;
+    left: 30%;
+    transform:translateY(-80%);   
+    z-index: 1;
+    img{
+        top: 40%;
+        border: 0px;
+        max-width: 100%;
+    }
+    }
 `;

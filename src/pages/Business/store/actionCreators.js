@@ -1,7 +1,7 @@
 import axios from 'axios'
 import * as actionTypes from './actionTypes'
-const estateList=(data)=>({
-    type:actionTypes.ESTATE_LIST,
+const estateList = (data) => ({
+    type: actionTypes.ESTATE_LIST,
     data
 })
 export const getEstateList=()=>{

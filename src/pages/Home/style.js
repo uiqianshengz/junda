@@ -272,6 +272,7 @@ export const NewsWrapper= styled.div`
             text-align:center;
             font-size: 16px;
             border: 1px solid #ef1919;
+            cursor: pointer;
         }
         .moreColor{
             background-color: red;
@@ -298,6 +299,7 @@ export const NewsWrapper= styled.div`
 export const ProjectContent = styled.div`
     padding-top: 70px;
     padding-bottom: 68px;
+    overflow: hidden;
     .mySwiper{
         margin: 0 -22px;
         padding: 15px 0 48px;
@@ -343,6 +345,7 @@ export const ProjectContent = styled.div`
         .projectMore{
         text-align: center;
         .MoreButton{
+            cursor: pointer;
             width: 160px;
             height: 60px;
             line-height: 60px;
@@ -362,6 +365,7 @@ export const ProjectContent = styled.div`
             position: absolute;
         }
         .moreTxt{
+            color: #000;
             position: absolute;
             left: 30%;
             z-index: 99;

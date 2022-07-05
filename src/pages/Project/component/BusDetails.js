@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux'
 import * as actionCreators from '../store/actionCreators';
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom"
 import { DetailsWrapper,DetailsTit} from '../style'
-const BusDetails = (props) => {
+const BusDetail = (props) => {
     const { BusDetails } = props;
     const [params] = useSearchParams();
     const id=params.getAll('id')[0]
-    console.log(id);
+    console.log(props);
     useEffect(() => {
         props.getBusDetails(id)
     }, [id])
@@ -18,14 +18,14 @@ const BusDetails = (props) => {
                 <DetailsTit>
                     {props.BusDetails.toJS()[0].title1}
                 </DetailsTit>
-            )} 
+            )}  
         </DetailsWrapper>
         
     )
 }
 
 const mapState = (state) => ({
-    BusDetails:state.getIn(['Details','BusDetails'])
+    BusDetails:state.getIn(['project','BusDetails'])
 
 })
 const mapDispatch = (dispatch) => ({
@@ -33,4 +33,4 @@ const mapDispatch = (dispatch) => ({
         dispatch(actionCreators.getBusDetailsList(id))
     }
 })
-export default connect(mapState, mapDispatch)(BusDetails);
+export default connect(mapState, mapDispatch)(BusDetail);

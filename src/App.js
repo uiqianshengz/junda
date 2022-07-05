@@ -49,7 +49,7 @@ class App extends Component {
                         <Route path='/project' element={<Project></Project>}>project页面
                          <Route path='' element={<Navigate to="busines" />}>Business页面</Route>
                          <Route path='busines' element={<BusinessList></BusinessList>}>Business页面</Route>
-                         <Route path='busdetails' element={<BusDetails></BusDetails>}>Busdetails页面</Route>
+                         <Route path='busines/:id' element={<BusDetails></BusDetails>}>Busdetails页面</Route>
                          <Route path='house' element={<House></House>}>House页面</Route>
                          <Route path='Property' element={<Property></Property>}>Property页面</Route>
                         </Route>

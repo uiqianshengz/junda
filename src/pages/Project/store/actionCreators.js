@@ -17,7 +17,7 @@ export const getProjectList=()=>{
 }
 export const getBusDetailsList=(id)=>{
     return async(dispatch)=>{
-       let{data:res}=await axios.get('http://localhost:3004/BusDetails?id='+id)
-       dispatch(BusDetailsList(res.data))
+       let {data:res}=await axios.get('http://localhost:3004/BusDetails?id='+id)
+       dispatch(BusDetailsList(res))
     }
 }

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment} from 'react'
 //导入头部
 import Header from './common/Header';
 // 导入底部

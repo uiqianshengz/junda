@@ -12,8 +12,6 @@ const BusDetails = (props) => {
     useEffect(() => {
         props.getBusDetails(id)
     }, [id])
-    console.log(props);
-    console.log(BusDetails);
     return (
         <DetailsWrapper>
             {BusDetails.size > 0 && (
@@ -21,15 +19,12 @@ const BusDetails = (props) => {
                     {props.BusDetails.toJS()[0].title1}
                 </DetailsTit>
             )} 
-            
         </DetailsWrapper>
-        
     )
 }
 
 const mapState = (state) => ({
     BusDetails:state.getIn(['project','BusDetails'])
-    
 })
 const mapDispatch = (dispatch) => ({
     getBusDetails(id) {

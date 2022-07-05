@@ -22,9 +22,14 @@ export const Newswr = styled.div`
     line-height:60px ;
     text-align: center;
     margin-left: 20px;
+   
      }
      .linkname:hover{
-    border-bottom: 2px solid red;
+        border-bottom: 2px solid red;
+     }
+     .active{
+         color: red;
+         border-bottom: 2px solid red;
      }
 `
 export const PressWrapper = styled.div`

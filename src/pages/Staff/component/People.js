@@ -6,6 +6,7 @@ class People extends Component {
             <StaffWpp>
                 <p className="tal">Talent Concept</p>
                 <h4>人才理念</h4>
+                <p className="line"></p>
                <p className="stp">有道无术，术尚可求；有术无道，止于术。</p>
                 <p className="stapes">团队的智慧和创造力是企业最大的财富，是企业发展之根本。我们把员工当做是企业发展道路上的合作伙伴，</p>
                 <p className="stape">并为其提供自由发展的空间与舞台，希望君达的伙伴们都能在工作中享受学习与生活的愉悦，在愉悦中努力的工作与收获。</p>

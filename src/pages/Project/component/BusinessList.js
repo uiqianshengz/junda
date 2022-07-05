@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import { NavLink } from 'react-router-dom';
 import { actionCreators } from '../store';
 import {
     BusinessCon, BusinessWrapper, BusinessTit1, BusinessTit2, BusinessBlock, BusinessText, BusinessImg, BusTitle,
@@ -19,16 +20,19 @@ class Business extends Component {
                         {
                             this.props.Commercont.map((item, index) => {
                                 return (
-                                    <BusinessBlock key={index}>
-                                        <BusinessImg>
-                                            <img src={item.get('img')} alt="" />
-                                        </BusinessImg>
-                                        <BusinessText>
-                                            <BusTitle>{item.get('title')}</BusTitle>
-                                            <BusText>{item.get('text')}</BusText>
-                                            <BusTips><span>{item.get('tips')}</span></BusTips>
-                                        </BusinessText>
-                                    </BusinessBlock>
+                                    <NavLink to={'details?id='+item.get('id')} key={index}>
+                                        <BusinessBlock>
+                                            <BusinessImg>
+                                                <img src={item.get('img')} alt="" />
+                                            </BusinessImg>
+                                            <BusinessText>
+                                                <BusTitle>{item.get('title')}</BusTitle>
+                                                <BusText>{item.get('text')}</BusText>
+                                                <BusTips><span>{item.get('tips')}</span></BusTips>
+                                            </BusinessText>
+                                        </BusinessBlock>
+                                    </NavLink>
+
                                 )
 
                             })

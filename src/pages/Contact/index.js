@@ -10,6 +10,7 @@ class Contact extends Component {
                 <ContactW>
                 <p className="talll">Contact us</p>
                 <h4>联系我们</h4>
+                <p className="line"></p>
                 <ConContent>
                     <Context>
                         <div>深圳市君达房地产经纪有限公司</div>

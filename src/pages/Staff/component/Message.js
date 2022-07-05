@@ -7,6 +7,7 @@ class Message extends Component {
             <StaffMess>
                 <p className="tall">Job Offers</p>
                 <h4>招聘信息</h4>
+
                 <Table className="table" locale={{
                     cancelSort: '点击取消排序',
                     triggerAsc: '点击升序',

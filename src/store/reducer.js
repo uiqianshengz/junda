@@ -16,5 +16,5 @@ export default combineReducers({
     about:AboutReducer,
     business:BusinessReducer,
     news:NewsReducer,
-    project:ProjectReducer,
+    project:ProjectReducer
 })

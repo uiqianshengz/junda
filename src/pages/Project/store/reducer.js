@@ -7,7 +7,9 @@ const defaultState = fromJS({
     Residecont:[],
     Property:[],
     Propercont:[],
-    BusDetails:[]
+    BusDetails:[],
+    HouseDetails:[],
+    PropertyDetails:[]
 })
 const project = (state = defaultState, action) => {
     switch (action.type) {
@@ -20,10 +22,15 @@ const project = (state = defaultState, action) => {
                 Property:fromJS(action.data.Property),
                 Propercont:fromJS(action.data.Propercont), 
             })
-            case actionTypes.BUS_DETAILS_LIST:
-                return state.merge({
-                    BusDetails:fromJS(action.BusDetails),
-                 })
+        case actionTypes.BUS_DETAILS_LIST:
+            console.log(action);
+            return state.set('BusDetails',fromJS(action.data));
+        case actionTypes.HOUSE_DETAILS_LIST:
+                console.log(action);
+                return state.set('HouseDetails',fromJS(action.data));
+         case actionTypes.PROPERTY_DETAILS_LIST:
+                console.log(action);
+                return state.set('PropertyDetails',fromJS(action.data));
         default:
     }
     return state;

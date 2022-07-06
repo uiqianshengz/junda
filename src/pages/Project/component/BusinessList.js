@@ -20,19 +20,19 @@ class Business extends Component {
                         {
                             this.props.Commercont.map((item, index) => {
                                 return (
-                                    <NavLink to={'busdetails?id='+item.get('id')}  key={index}>
-                                         <BusinessBlock>
-                                        <BusinessImg>
-                                            <img src={item.get('img')} alt="" />
-                                        </BusinessImg>
-                                        <BusinessText>
-                                            <BusTitle>{item.get('title')}</BusTitle>
-                                            <BusText>{item.get('text')}</BusText>
-                                            <BusTips><span>{item.get('tips')}</span></BusTips>
-                                        </BusinessText>
-                                    </BusinessBlock>
+                                    <NavLink to={'details?id='+item.get('id')} key={index}>
+                                        <BusinessBlock>
+                                            <BusinessImg>
+                                                <img src={item.get('img')} alt="" />
+                                            </BusinessImg>
+                                            <BusinessText>
+                                                <BusTitle>{item.get('title')}</BusTitle>
+                                                <BusText>{item.get('text')}</BusText>
+                                                <BusTips><span>{item.get('tips')}</span></BusTips>
+                                            </BusinessText>
+                                        </BusinessBlock>
                                     </NavLink>
-                                   
+
                                 )
 
                             })

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { actionCreators } from '../store';
+import { NavLink } from 'react-router-dom';
 import { BusinessCon, BusinessWrapper, BusinessTit1, BusinessTit2, BusinessBlock,BusinessText,BusinessImg,BusTitle,
     BusText,BusTips,BusCon} from '../style'
 class Property extends Component {
@@ -17,6 +18,7 @@ class Property extends Component {
                      {
                     this.props.Propercont.map((item, index) => {
                         return(
+                            <NavLink to={'details?id='+item.get('id')} key={index}>
                             <BusinessBlock key={index}>
                             <BusinessImg>
                                  <img src={item.get('img')} alt="" />
@@ -27,6 +29,7 @@ class Property extends Component {
                                  <BusTips><span>{item.get('tips')}</span></BusTips>
                              </BusinessText>
                         </BusinessBlock>
+                        </NavLink>
                         )
                         
                     })

@@ -3,44 +3,45 @@ import * as actionCreators from '../store/actionCreators';
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom"
 import { DetailsWrapper, DetailsTit, DetailsCon, DetailsEng, DetailsImg, DetailsTitle1, DetailsText1, DetailsTitle2, DetailsText2 } from '../style'
-const BusDetail = (props) => {
-    const { BusDetails } = props;
+const Housedetails = (props) => {
+    const { HouseDetails } = props;
     const [params] = useSearchParams();
     const id = params.getAll('id')[0]
     console.log(props);
     useEffect(() => {
-        props.getBusDetails(id)
+        props.getHouseDetails(id)
     }, [id])
     return (
         <DetailsWrapper>
-            {BusDetails.size > 0 && (
+            {HouseDetails.size > 0 && (
                 <DetailsCon>
                     <DetailsEng>
-                        {props.BusDetails.toJS()[0].english}
+                        {props.HouseDetails.toJS()[0].english}
                     </DetailsEng>
                     <DetailsTit>
-                        {props.BusDetails.toJS()[0].title1}
+                        {props.HouseDetails.toJS()[0].title1}
                     </DetailsTit>
                     <p className='p'></p>
                     <DetailsImg>
-                        <img src={props.BusDetails.toJS()[0].image} alt="" />
+                        <img src={props.HouseDetails.toJS()[0].image} alt="" />
                     </DetailsImg>
                     <DetailsTitle1>
-                        {props.BusDetails.toJS()[0].title2}
+                        {props.HouseDetails.toJS()[0].title2}
                     </DetailsTitle1>
                     <DetailsText1>
                         <ul>
-                            <li>{props.BusDetails.toJS()[0].p1}</li>
-                            <li>{props.BusDetails.toJS()[0].p2}</li>
-                            <li>{props.BusDetails.toJS()[0].p3}</li>
-                            <li>{props.BusDetails.toJS()[0].p4}</li>
+                            <li>{props.HouseDetails.toJS()[0].p1}</li>
+                            <li>{props.HouseDetails.toJS()[0].p2}</li>
+                            <li>{props.HouseDetails.toJS()[0].p3}</li>
+                            <li>{props.HouseDetails.toJS()[0].p4}</li>
                         </ul>
                     </DetailsText1>
                     <DetailsTitle2>
-                        {props.BusDetails.toJS()[0].title3}
+                        {props.HouseDetails.toJS()[0].title3}
                     </DetailsTitle2>
                     <DetailsText2>
-                        <p>{props.BusDetails.toJS()[0].text}</p>
+                        <p>{props.HouseDetails.toJS()[0].text1}</p>
+                        <p>{props.HouseDetails.toJS()[0].text2}</p>
                     </DetailsText2>
                 </DetailsCon>
 
@@ -50,11 +51,11 @@ const BusDetail = (props) => {
 }
 
 const mapState = (state) => ({
-    BusDetails: state.getIn(['project', 'BusDetails'])
+    HouseDetails: state.getIn(['project', 'HouseDetails'])
 })
 const mapDispatch = (dispatch) => ({
-    getBusDetails(id) {
-        dispatch(actionCreators.getBusDetailsList(id))
+    getHouseDetails(id) {
+        dispatch(actionCreators.getHouseDetailsList(id))
     }
 })
-export default connect(mapState, mapDispatch)(BusDetail);
+export default connect(mapState, mapDispatch)(Housedetails);

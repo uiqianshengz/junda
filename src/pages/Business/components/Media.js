@@ -83,6 +83,8 @@ class Media extends Component {
     }
     componentDidMount() {
         this.props.Medias();
+        // 返回顶部
+        window.scrollTo(0, 0);
     }
 }
 const mapState = (state) => ({

@@ -7,7 +7,9 @@ const defaultState = fromJS({
     Residecont:[],
     Property:[],
     Propercont:[],
-    BusDetails:[]
+    BusDetails:[],
+    HouseDetails:[],
+    PropertyDetails:[]
 })
 const project = (state = defaultState, action) => {
     switch (action.type) {
@@ -23,6 +25,12 @@ const project = (state = defaultState, action) => {
         case actionTypes.BUS_DETAILS_LIST:
             console.log(action);
             return state.set('BusDetails',fromJS(action.data));
+        case actionTypes.HOUSE_DETAILS_LIST:
+                console.log(action);
+                return state.set('HouseDetails',fromJS(action.data));
+         case actionTypes.PROPERTY_DETAILS_LIST:
+                console.log(action);
+                return state.set('PropertyDetails',fromJS(action.data));
         default:
     }
     return state;

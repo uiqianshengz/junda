@@ -7,10 +7,11 @@ import {
     EstateWrapper, EstateTit1, EstateTit2, EstateText, EstateCon, EstateBorder, EstateClass,
     EstateTit, EstateLast, EstatePosition, EstateFooter, EstateBlock, EstateBlock1, EstateBlock2, EstateBlock3,
     StandardsTit1, StandardsTit2, StandardsText, EstateImg, BeforeTit, BeforeText, BeforeCon, BeforeTits, BeforeBlock
-  ,P,SellTit,SellCon,SellText} from '../style'
+    , P, SellTit, SellCon, SellText
+} from '../style'
 class Estate extends Component {
-    handleClick = (index,e) => {
-        this.slider.goTo(index,false)
+    handleClick = (index, e) => {
+        this.slider.goTo(index, false)
         // e.target.style.color = 'red'
     }
 
@@ -27,92 +28,92 @@ class Estate extends Component {
                     <EstateText>{this.props.Estate.get('text1')}</EstateText>
                     <EstateText>{this.props.Estate.get('text2')}</EstateText>
                     <EstateBorder>
-                        <Carousel  afterChange={onChange}  ref={el=>(this.slider=el)}>
+                        <Carousel afterChange={onChange} ref={el => (this.slider = el)}>
                             <div>
-                            <BeforeTit>
-                            前期策划代理服务纲要
-                          </BeforeTit>
-                          <BeforeCon>
-                            {
-                                this.props.before.map((item, index) => {
-                                    return (
-                                        <BeforeBlock key={index}>
-                                            <BeforeTits>
-                                                    <img src="http://szjddc.com/dist/images/dc-icon01.png" alt="" />
-                                                   <P>{item.get('title')}</P>
-                                            </BeforeTits>
-                                            <BeforeText>{item.get('tips1')} </BeforeText>
-                                            <BeforeText>{item.get('tips2')} </BeforeText>
-                                            <BeforeText>{item.get('tips3')} </BeforeText>
-                                            <BeforeText>{item.get('tips4')} </BeforeText>
-                                            <BeforeText>{item.get('tips5')} </BeforeText>
-                                            <BeforeText>{item.get('tips6')} </BeforeText>
-                                            <BeforeText>{item.get('tips7')} </BeforeText>
-                                        </BeforeBlock>
-                                    )
-                                    
-                                })
-                            }
-                        </BeforeCon>
+                                <BeforeTit>
+                                    前期策划代理服务纲要
+                                </BeforeTit>
+                                <BeforeCon>
+                                    {
+                                        this.props.before.map((item, index) => {
+                                            return (
+                                                <BeforeBlock key={index}>
+                                                    <BeforeTits>
+                                                        <img src="http://szjddc.com/dist/images/dc-icon01.png" alt="" />
+                                                        <P>{item.get('title')}</P>
+                                                    </BeforeTits>
+                                                    <BeforeText>{item.get('tips1')} </BeforeText>
+                                                    <BeforeText>{item.get('tips2')} </BeforeText>
+                                                    <BeforeText>{item.get('tips3')} </BeforeText>
+                                                    <BeforeText>{item.get('tips4')} </BeforeText>
+                                                    <BeforeText>{item.get('tips5')} </BeforeText>
+                                                    <BeforeText>{item.get('tips6')} </BeforeText>
+                                                    <BeforeText>{item.get('tips7')} </BeforeText>
+                                                </BeforeBlock>
+                                            )
+
+                                        })
+                                    }
+                                </BeforeCon>
                             </div>
                             <div>
-                            <SellTit>
-                            销售代理服务纲要
-                          </SellTit>
-                          <SellCon>
-                            {
-                                this.props.sell.map((item, index) => {
-                                    return (
-                                    <SellText key={index}>{item.get('text')} </SellText>
-                                    )
-                                    
-                                })
-                            }
-                        </SellCon>
+                                <SellTit>
+                                    销售代理服务纲要
+                                </SellTit>
+                                <SellCon>
+                                    {
+                                        this.props.sell.map((item, index) => {
+                                            return (
+                                                <SellText key={index}>{item.get('text')} </SellText>
+                                            )
+
+                                        })
+                                    }
+                                </SellCon>
                             </div>
                             <div>
-                            <SellTit>
-                            招商代理服务纲要
-                          </SellTit>
-                          <SellCon>
-                            {
-                                this.props.attract.map((item, index) => {
-                                    return (
-                                    <SellText key={index}>{item.get('text')} </SellText>
-                                    )
-                                    
-                                })
-                            }
-                        </SellCon>
+                                <SellTit>
+                                    招商代理服务纲要
+                                </SellTit>
+                                <SellCon>
+                                    {
+                                        this.props.attract.map((item, index) => {
+                                            return (
+                                                <SellText key={index}>{item.get('text')} </SellText>
+                                            )
+
+                                        })
+                                    }
+                                </SellCon>
                             </div>
                             <div>
-                            <SellTit>
-                            运营管理顾问服务纲要
-                          </SellTit>
-                          <SellCon>
-                            {
-                                this.props.operation.map((item, index) => {
-                                    return (
-                                    <SellText key={index}>{item.get('text')} </SellText>
-                                    )
-                                    
-                                })
-                            }
-                        </SellCon>
+                                <SellTit>
+                                    运营管理顾问服务纲要
+                                </SellTit>
+                                <SellCon>
+                                    {
+                                        this.props.operation.map((item, index) => {
+                                            return (
+                                                <SellText key={index}>{item.get('text')} </SellText>
+                                            )
+
+                                        })
+                                    }
+                                </SellCon>
                             </div>
                         </Carousel>
                     </EstateBorder>
                 </EstateWrapper>
-                    
+
                 <img src="http://szjddc.com/dist/images/dc-bg.png" alt="" />
                 <EstateWrapper>
                     <EstateClass>
                         {
-                            this.props.classify.map((item,index)=>{
-                                return(
-                                 <EstateTit key={index} onClick={(e)=> this.handleClick( index, e )}>{item.get('title')}</EstateTit>                                   
+                            this.props.classify.map((item, index) => {
+                                return (
+                                    <EstateTit key={index} onClick={(e) => this.handleClick(index, e)}>{item.get('title')}</EstateTit>
                                 )
-                               
+
                             })
                         }
                     </EstateClass>
@@ -171,11 +172,12 @@ class Estate extends Component {
 
 
         )
-
     }
     componentDidMount() {
         //    console.log(123);
         this.props.Estates();
+        // 返回顶部
+        window.scrollTo(0, 0);
 
     }
 }

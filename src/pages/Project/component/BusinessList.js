@@ -45,8 +45,9 @@ class Business extends Component {
         );
     }
     componentDidMount() {
-        //    console.log(123);
         this.props.Projects();
+        // 返回顶部
+    window.scrollTo(0, 0);
 
     }
 }

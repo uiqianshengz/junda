@@ -24,15 +24,8 @@ class Home extends Component {
                             </NavLink>
                         </ProjectLeft>
                         <ProjectRight>
-                            {/* <Breadcrumb separator=">">
-                                <Breadcrumb.Item>首页</Breadcrumb.Item>
-                                <Breadcrumb.Item href="">君达业务</Breadcrumb.Item>
-                                <Breadcrumb.Item href="">君达地产</Breadcrumb.Item>
-                            </Breadcrumb> */}
                         </ProjectRight>
-                     
                     </ProjectWrapper>
-                    
                 </ProjectNav>
                 <Outlet></Outlet>
             </Project>

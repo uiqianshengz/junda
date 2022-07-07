@@ -14,30 +14,32 @@ class NewsCenter extends Component {
                         {
                             this.props.newsList.map((item, index) => {
                                 return (
-                                    <Col key={index} className="gutter-row newsCard" sm={{ span: 24 }} lg={{ span: 8 }}>
-                                        <div className="rowContent">
-                                            <span>
-                                                <em>{item.get('date')}</em>
-                                                <i>{item.get('month')}</i>
-                                            </span>
-                                            <div className="imgCard">
-                                                <img src={item.get('imgUrl')} alt="" />
-                                            </div>
-                                            <h4>{item.get('txt')}</h4>
-                                        </div>
 
+                                    <Col key={index} className="gutter-row newsCard" sm={{ span: 24 }} lg={{ span: 8 }}>
+                                        <Link to='/news/press'>
+                                            <div className="rowContent">
+                                                <span>
+                                                    <em>{item.get('date')}</em>
+                                                    <i>{item.get('month')}</i>
+                                                </span>
+                                                <div className="imgCard">
+                                                    <img src={item.get('imgUrl')} alt="" />
+                                                </div>
+                                                <h4>{item.get('txt')}</h4>
+                                            </div>
+                                        </Link>
                                     </Col>
                                 )
                             })
                         }
                     </Row>
                     <div className='newsMore'>
-                    <Link to='/news'>
-                        <div className="newsMoreButton">
-                            <div className="moreColor"></div>
-                            <div className='moreTxt'>更多新闻</div>
-                        </div>
-                    </Link>
+                        <Link to='/news'>
+                            <div className="newsMoreButton">
+                                <div className="moreColor"></div>
+                                <div className='moreTxt'>更多新闻</div>
+                            </div>
+                        </Link>
                     </div>
                 </NewsWrapper>
             </NewsContent>

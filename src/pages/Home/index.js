@@ -23,6 +23,8 @@ class Home extends Component {
     componentDidMount() {
         //页面刚加载时调用，显示ajax请求结果
         this.props.homeList()
+        // 返回顶部
+        window.scrollTo(0, 0);
     }
 }
 

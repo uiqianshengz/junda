@@ -53,3 +53,6 @@ table {
 a{
     color: #000;
 }
+html{
+    cursor: default;
+}

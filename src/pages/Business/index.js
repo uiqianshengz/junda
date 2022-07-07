@@ -30,9 +30,7 @@ class Home extends Component {
                                 <Breadcrumb.Item href="">君达地产</Breadcrumb.Item>
                             </Breadcrumb> */}
                         </BusinessRight>
-                     
-                    </BusinessWrapper>
-                    
+                    </BusinessWrapper>               
                 </BusinessNav>
                 <Outlet></Outlet>
             </Business>

@@ -159,8 +159,67 @@ span:hover{
 `;
 // DetailsWrapper,DetailsTit
 export const DetailsWrapper=styled.div`
-
+  width: 1200px;
+  margin: 0 auto;
 `;
 export const DetailsTit=styled.div`
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+`;
+export const DetailsCon=styled.div`
+  .p{
+      width: 20px;
+      height: 3px;
+      background-color: red;
+      margin-top: 20px;
+  }
+`;
+export const DetailsEng=styled.div`
+margin-top: 50px;
+ font-size: 30px;
+ color: red;
+  font-family: "Times New Roman", Georgia, Serif;
+`;
 
+export const DetailsTitle1=styled.div`
+font-size: 24px;
+color: #c00000;
+font-weight: 700;
+margin-top: 40px;
+font-family: Arial, 'Microsoft YaHei','Hiragino Sans GB', sans-serif;
+`;
+export const DetailsImg=styled.div`
+ width: 1200px;
+ height: 360px;
+ border-bottom: 7px solid gainsboro;
+ img{
+     width: 600px;
+     height: 300px;
+     margin-top: 20px;
+ }
+`;
+export const DetailsText1=styled.div`
+ font-size: 14px;
+ font-weight: 600;
+ color: #58585e;
+ line-height: 25px;
+ ul{
+     margin-top: 20px;
+ }
+`;
+export const DetailsTitle2=styled.div`
+font-size: 24px;
+color: #c00000;
+font-weight: 700;
+margin-top: 20px;
+font-family: Arial, 'Microsoft YaHei','Hiragino Sans GB', sans-serif;
+`;
+export const DetailsText2=styled.div`
+margin-top: 20px;
+line-height: 25px;
+color: #666666;
+ width: 680px;
+  font-size: 14px;
+  margin-bottom: 70px;
 `;

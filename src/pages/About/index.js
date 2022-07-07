@@ -22,6 +22,8 @@ class About extends Component {
     }
     componentDidMount(){
         this.props.aboutList() 
+        // 返回顶部
+    window.scrollTo(0, 0);
     }
 }
 const mapState = (state) => ({

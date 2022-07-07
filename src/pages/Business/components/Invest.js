@@ -83,6 +83,8 @@ class Invest extends Component {
     }
     componentDidMount() {
         this.props.Invests();
+        // 返回顶部
+        window.scrollTo(0, 0);
     }
 }
 const mapState = (state) => ({

@@ -22,15 +22,15 @@ export const Newswr = styled.div`
     line-height:60px ;
     text-align: center;
     margin-left: 20px;
-   
-     }
-     .linkname:hover{
+
+    }
+    .linkname:hover{
         border-bottom: 2px solid red;
-     }
-     .active{
-         color: red;
-         border-bottom: 2px solid red;
-     }
+    }
+    .active{
+        color: red;
+        border-bottom: 2px solid red;
+    }
 `
 export const PressWrapper = styled.div`
     width: 1200px;
@@ -57,11 +57,11 @@ export const PressCarou = styled.div`
     margin-top: 50px; 
 `;
 export const PressLeft = styled.div`
-     width: 450px;
+    width: 450px;
     height: 258px; 
     overflow: hidden;
     img{
-         width: 100%;
+        width: 100%;
         height: 100%;
         transition: 1s;
     }
@@ -103,7 +103,7 @@ export const PressImg = styled.div`
     width: 260px;
     height: 160px;    
     overflow: hidden;
-     img{
+    img{
     width: 260px;
     height: 160px; 
     transition: 1s;
@@ -155,7 +155,8 @@ height: 220px;
 margin-right: 15px;
 overflow: hidden;
 margin-top: 50px;
-img{
+cursor: pointer;
+.mage{
     width: 285px;
     height: 160px;
     transition: 1s;
@@ -187,3 +188,42 @@ flex-wrap: wrap;
     }
 }
 `
+export const DetailsWrapper = styled.div`
+    width: 1200px;
+    margin: 0 auto;
+`;
+export const DetailsItem = styled.div`
+padding: 60px 0 100px 0;
+/* width: 100%; */
+text-align: center;
+`;
+export const DetailsTit = styled.h1`
+    font-size: 20px;
+    color: #3c3c3c;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, 'Microsoft YaHei','Hiragino Sans GB', sans-serif;
+`;
+export const DetailsDate = styled.div`
+font-size: 16px;
+    padding: 20px 0 10px 0;
+    color: #282828;
+    text-align: center;
+    font-weight: normal;
+    line-height: 24px;
+`;
+export const DetailsCon = styled.div`
+    text-indent: 2rem;
+    text-align: left;
+`;
+export const DetailsImg = styled.div``;
+export const DetailsMen = styled.div`
+    padding: 20px 0 40px 0;
+    font-size: 16px;
+    font-family: 宋体;
+    color: rgba(88, 88, 88, 1);
+    line-height: 180%;
+    width: 100%;
+    border-top: 2px solid red
+`;

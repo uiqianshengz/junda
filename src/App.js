@@ -11,8 +11,8 @@ import About from './pages/About';
 import Business from './pages/Business';
 import Contact from './pages/Contact';
 import News from './pages/News';
-import Press from './pages/News/compointer/Press';
-import Shine from './pages/News/compointer/Shine';
+import Press from './pages/News/component/Press';
+import Shine from './pages/News/component/Shine';
 import Project from './pages/Project';
 import Staff from './pages/Staff';
 // import Estate from './pages/Business/components/EstateList';
@@ -25,6 +25,9 @@ import BusinessList from './pages/Project/component/BusinessList';
 import House from './pages/Project/component/House';
 import Property from './pages/Project/component/Property'
 import BusDetails from './pages/Project/component/BusDetails';
+import HouseDetails from './pages/Project/component/HouseDetails';
+import PropertyDetails from './pages/Project/component/PropertyDetails';
+import NewsDetails from './pages/News/component/NewsDetails';
 class App extends Component {
     render() {
         return (
@@ -44,6 +47,7 @@ class App extends Component {
                         <Route path='/news' element={<News></News>}>news页面
                             <Route path='' element={<Navigate to="press" />}></Route>
                             <Route path='/news/press' element={<Press></Press>}></Route>
+                            <Route path='press/:id' element={<NewsDetails></NewsDetails>}>Newsdetails页面</Route>
                             <Route path='/news/shine' element={<Shine></Shine>}></Route>
                         </Route>
                         <Route path='/project' element={<Project></Project>}>project页面
@@ -51,7 +55,9 @@ class App extends Component {
                             <Route path='busines' element={<BusinessList></BusinessList>}>Business页面</Route>
                             <Route path='busines/:id' element={<BusDetails></BusDetails>}>Busdetails页面</Route>
                             <Route path='house' element={<House></House>}>House页面</Route>
+                            <Route path='house/:id' element={<HouseDetails></HouseDetails>}>Housedetails页面</Route>
                             <Route path='Property' element={<Property></Property>}>Property页面</Route>
+                            <Route path='Property/:id' element={<PropertyDetails></PropertyDetails>}>Propertydetails页面</Route>
                         </Route>
                         
                         <Route path='/staff' element={<Staff></Staff>}>staff页面

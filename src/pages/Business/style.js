@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Business = styled.div`
- 
+
 `;
 export const BusinessNav = styled.div`
 background: #f7f7f7;

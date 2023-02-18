@@ -10,7 +10,7 @@ const NewsDetailsList = (data) => ({
 })
 export const NewsDataPress=()=>{
     return async (dispatch)=>{
-        let {data:res}=await axios.get('http://localhost:3004/newsList')
+        let {data:res}=await axios.get('http://47.115.217.72:3010/newsList')
         console.log(res);
         if(res.status!==200)return;
         dispatch(NewsDataLi(res.data))
@@ -18,7 +18,7 @@ export const NewsDataPress=()=>{
 }
 export const getNewsDetailsList=(id)=>{
     return async(dispatch)=>{
-       let {data:res}=await axios.get('http://localhost:3004/newsDetails?id='+id)
+       let {data:res}=await axios.get('http://47.115.217.72:3010/newsDetails?id='+id)
        dispatch(NewsDetailsList(res))
     }
 }

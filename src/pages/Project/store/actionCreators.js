@@ -18,26 +18,26 @@ const PropertyDetailsList = (data) => ({
 })
 export const getProjectList = () => {
     return async (dispatch) => {
-        let { data: res } = await axios.get('http://localhost:3004/projectList')
+        let { data: res } = await axios.get('http://47.115.217.72:3010/projectList')
         if (res.status !== 200) return
         dispatch(projectList(res.data))
     }
 }
-export const getBusDetailsList=(id)=>{
-    return async(dispatch)=>{
-       let {data:res}=await axios.get('http://localhost:3004/BusDetails?id='+id)
-       dispatch(BusDetailsList(res))
+export const getBusDetailsList = (id) => {
+    return async (dispatch) => {
+        let { data: res } = await axios.get('http://47.115.217.72:3010/BusDetails?id=' + id)
+        dispatch(BusDetailsList(res))
     }
 }
-export const getHouseDetailsList=(id)=>{
-    return async(dispatch)=>{
-       let {data:res}=await axios.get('http://localhost:3004/HouseDetails?id='+id)
-       dispatch(HouseDetailsList(res))
+export const getHouseDetailsList = (id) => {
+    return async (dispatch) => {
+        let { data: res } = await axios.get('http://47.115.217.72:3010/HouseDetails?id=' + id)
+        dispatch(HouseDetailsList(res))
     }
 }
-export const getPropertyDetailsList=(id)=>{
-    return async(dispatch)=>{
-       let {data:res}=await axios.get('http://localhost:3004/PropertyDetails?id='+id)
-       dispatch(PropertyDetailsList(res))
+export const getPropertyDetailsList = (id) => {
+    return async (dispatch) => {
+        let { data: res } = await axios.get('http://47.115.217.72:3010/PropertyDetails?id=' + id)
+        dispatch(PropertyDetailsList(res))
     }
 }
